@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting Visualizer</title>
+        <link rel="stylesheet" href="./src/sort_vis.css">
+    </head>
+    <body>
+        <!-- Nav Bar -->
+        <div id="nav">
+            <div></div>
+            <div style="display: flex;">
+                <div id="create" onclick="generate()">Generate</div>
+                <div id="start" onclick="sort()">Sort</div>
+            </div>
+            <div id="menu"  onclick="showbox()">
+                <img src="./menu.png" >
+            </div>
+        </div>
+
+        <!-- Grid -->
+        <div id="container">
+        </div>
+        <!-- Setup Box -->
+        <div id="box">
+            <h2>Welcome</h2>
+
+            <label for="algorithm">Algorithm</label>
+            <select id="algorithm">
+                <option>Bubble Sort</option>
+                <option>Insertion Sort</option>
+                <option>Selection Sort</option>
+                <option>Merge Sort</option>
+                <option>Quick Sort</option>
+            </select>
+            <br>
+            <label for="range-cont" style="width:100px;">Elements</label>
+            <div id="range-cont">
+                <p id="rangeText" ></p>
+                <input type="range" id="rangeBar" min="10" max="100" onclick="hideNseek()">
+            </div>
+
+            <div id="speedBar">
+                <label for="speedBar">Speed</label>
+                <div class="speed" onclick="setSpeed(0)"> Slow</div>
+                <div class="speed" onclick="setSpeed(1)"> Medium</div>
+                <div class="speed" onclick="setSpeed(2)"> Fast</div>
+                <div class="speed" onclick="setSpeed(3)"> Godspeed</div>
+            </div>
+            
+            <div id="ok" onclick="startup()">OK</div>
+        
+        </div>
+
+    </body>
+    <script src="./src/sort_vis.js"></script>
+</html>

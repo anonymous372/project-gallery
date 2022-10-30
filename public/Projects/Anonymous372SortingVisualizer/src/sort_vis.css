@@ -1,0 +1,195 @@
+body {
+  margin: 0px;
+  background-color: lightgrey;
+  height: 90vh;
+
+  font-family: "Courier New";
+}
+
+#nav {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(104, 104, 104);
+}
+
+#create {
+  text-align: center;
+  padding: 10px 0;
+  width: 120px;
+  margin: 0 20px;
+}
+#create:hover {
+  cursor: pointer;
+  background-color: rgb(131, 131, 131);
+  transform: scale(0.98);
+}
+#start {
+  margin-right: 100px;
+  text-align: center;
+  padding: 10px 0;
+  width: 120px;
+}
+#start:hover {
+  cursor: pointer;
+  background-color: rgb(131, 131, 131);
+  transform: scale(0.98);
+}
+#menu{
+  float:right;
+  margin:0 20px;
+  padding:8px;
+  cursor: pointer;
+}
+#menu:hover {
+  background-color: rgb(131, 131, 131);
+}
+#menu:active{
+  transform:scale(0.95);
+}
+
+
+/* Setup Box Styles ******************************* */
+#box {
+  text-align: center;
+
+  min-width:350px;
+  width: 480px;
+  height: 480px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  background: rgb(224, 224, 224);
+  border: 2px solid black;
+  border-radius: 5px;
+  
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  z-index: 1;
+}
+
+h2 {
+  margin:0;
+  margin-bottom: 40px;
+  padding-top: 5px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  background: rgb(240, 240, 250);
+}
+#algorithm{
+  margin:10px 0 30px;
+}
+select{
+  font-size: 17px;
+  border-radius: 4px;
+  background: rgb(240, 240, 250);
+}
+select:focus{
+  outline: none;
+}
+#range-cont {
+  display: inline-flex;
+  margin: 20px 0 30px;
+  background: rgb(240, 240, 250);
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+#range-cont p {
+  font-weight: bold;
+  width: 30px;
+  margin: 0px;
+}
+#speedBar{
+  margin: 20px auto;
+  display:flex;
+  justify-content: center;
+}
+.speed{
+  font-size: 16px;
+  cursor: pointer;
+  background: rgb(240, 240, 250);
+  border:1px solid black;
+  border-radius: 2px;
+  padding:4px;
+  margin:0 5px;
+  width:75px;
+}
+
+.selected-speed{
+  background-color: gray;
+}
+
+label{
+  border-radius: 5px;
+  
+  margin: 0px;
+  padding:5px;
+  background-color: rgb(148, 169, 189);
+}
+
+/* @media screen and (max-width:570px){
+  #speedBar{
+    flex-direction: column;
+    align-items: center;
+  }
+  .speed{
+    margin:5px 0;
+  }
+} */
+
+#ok {
+  cursor: pointer;
+  
+  margin:100px auto 0;
+  width: 120px;
+  padding: 8px;
+  text-align: center;
+
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(73, 73, 73);
+
+  border: 1px solid black;
+  border-radius: 3px;
+
+  background: #d3959b;
+  background: linear-gradient(to bottom, #a3a3a3, #d2d3d2);
+}
+#ok:hover {
+  background: #dba4a9;
+  background: linear-gradient(to bottom, #ebacb3, #e0f8ca);
+}
+#ok:active {
+  transform: scale(0.97);
+  transition: 0.2s;
+}
+
+/* Number Bars Styles ***************************************** */
+#container {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.nums {
+  background-color: green;
+  /* width:30px; */
+
+  border: 2px solid black;
+  border-collapse: collapse;
+
+  margin: 0 -1px;
+}
+
+.cur_num {
+  background-color: rgb(250, 250, 144);
+}
